@@ -1,62 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brandyug Digital</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Brandyug<span>Digital</span></h1>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Grow Your Brand with <span>Brandyug Digital</span></h2>
-      <p>We help businesses build a strong online presence with powerful digital marketing strategies and creative designs.</p>
-      <a href="#" class="btn">Get Started</a>
+    <div class="calculator">
+        <input type="text" id="display" disabled />
+
+        <div class="buttons">
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn operator" data-value="/">÷</button>
+
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn operator" data-value="*">×</button>
+
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn operator" data-value="-">−</button>
+
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value=".">.</button>
+            <button class="btn operator" data-value="+">+</button>
+            <button class="btn equal" id="equal">=</button>
+
+            <button class="btn clear" id="clear">C</button>
+        </div>
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section class="about">
-    <h2>About Us</h2>
-    <p>At Brandyug Digital, we combine creativity and technology to deliver marketing solutions that help brands stand out. From social media to web design — we bring your vision to life.</p>
-  </section>
+    <script src="script.js"></script>
 
-  <!-- Services Section -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-container">
-      <div class="service-box">
-        <h3>Digital Marketing</h3>
-        <p>Boost your online reach with smart and targeted marketing campaigns.</p>
-      </div>
-      <div class="service-box">
-        <h3>Web Development</h3>
-        <p>Create modern, responsive, and user-friendly websites for your brand.</p>
-      </div>
-      <div class="service-box">
-        <h3>Brand Strategy</h3>
-        <p>Build a strong brand identity that connects with your audience.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Brandyug Digital | All Rights Reserved</p>
-  </footer>
 </body>
 </html>
